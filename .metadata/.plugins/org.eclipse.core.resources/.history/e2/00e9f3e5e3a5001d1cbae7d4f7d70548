@@ -1,0 +1,22 @@
+package com.simple.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.simple.board.service.BoardServiceImpl;
+
+@Controller
+public class BoardController {
+	
+	BoardServiceImpl board;
+	
+	@RequestMapping("/boardRegist")
+	public String regist() {
+		
+		return "service/boardRegist";
+	}
+
+	
+	
+	
+}

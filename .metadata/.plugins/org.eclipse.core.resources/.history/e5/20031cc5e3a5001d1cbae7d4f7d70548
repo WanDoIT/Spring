@@ -1,0 +1,11 @@
+package com.simple.controller;
+
+import org.springframework.stereotype.Controller;
+
+import com.simple.board.service.BoardServiceImpl;
+
+@Controller
+public class BoardController {
+	
+	BoardServiceImpl board;
+}

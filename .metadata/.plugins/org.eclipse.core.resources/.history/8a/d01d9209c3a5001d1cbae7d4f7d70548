@@ -1,0 +1,14 @@
+package com.simple.basic.mapper;
+
+import java.util.ArrayList;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import com.simple.command.ScoreVO;
+
+@Mapper //마이바티스에서 매퍼를 지칭 -(스프링에서는 생략가능)
+public interface TestMapper {
+	public String getTime(); //1
+	public ArrayList<ScoreVO> getScore();
+	public ScoreVO getOne();
+}

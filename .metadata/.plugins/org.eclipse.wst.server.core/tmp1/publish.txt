@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Fri Feb 10 11:37:43 KST 2023
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\user\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=C\:\\Users\\user\\Desktop\\course\\spring\\apache-tomcat-9.0.71\\wtpwebapps\\SpringMyweb\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
+org.eclipse.jst.jee.server\:SpringMyweb=C\:\\Users\\user\\Desktop\\course\\spring\\apache-tomcat-9.0.71\\wtpwebapps\\SpringMyweb
+org.eclipse.jst.j2ee.server\:BootTest=C\:\\Users\\user\\Desktop\\course\\spring\\apache-tomcat-9.0.71\\wtpwebapps\\BootTest
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\user\\.gradle\\caches\\modules-2\\files-2.1\\org.springframework\\spring-web\\5.3.25\\c69815e7931cd3ce7f19cc8028fd1c36626120d6\\spring-web-5.3.25.jar=C\:\\Users\\user\\Desktop\\course\\spring\\apache-tomcat-9.0.71\\wtpwebapps\\BootTest\\WEB-INF\\lib\\spring-web-5.3.25.jar

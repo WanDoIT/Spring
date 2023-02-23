@@ -1,0 +1,19 @@
+package com.lsw.myweb.trip.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lsw.myweb.command.TripVO;
+
+@Service("tripService")
+public class TripServiceImpl implements TripService{
+	@Autowired
+	private TripMapper tripMapper;
+
+	@Override
+	public int noticeRegist(TripVO vo) {
+		
+		return tripMapper.noticeRegist(vo);
+	}
+	
+}

@@ -1,0 +1,52 @@
+package com.simple.basic;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mybatis.spring.SqlSessionFactoryBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.simple.basic.mapper.TestMapper;
+import com.simple.command.ScoreVO;
+
+@RunWith(SpringJUnit4ClassRunner.class) // junit으로 테스트환경을 구성
+@ContextConfiguration("file:src/main/webapp/WEB-INF/config/root-context.xml") // 동작시킬 스프링 설정파일
+public class JDBCMybatis {
+
+	@Autowired
+	SqlSessionFactoryBean sqlSessionFactory;
+
+	@Autowired
+	TestMapper testMapper;
+
+//		@Test
+//		public void testCode01() {
+//			//마이바티스 핵심 객체
+//			System.out.println(sqlSessionFactory);
+//		}
+//		
+//	@Test
+//	public void testCode02() {
+//		String time= testMapper.getTime();
+//			System.out.println(time);
+//		}
+//		
+	
+	// select태그의 resultType
+//	@Test
+//	public void testCode03() {
+//		ArrayList<ScoreVO> list = testMapper.getScore();
+//		System.out.println(list.toString());
+//	}
+
+	// 매개변수 - 단일값
+	@Test
+	public void testCode04() {
+		ScoreVO vo = testMapper.getOne(1);
+		System.out.println(vo.toString());
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.lsw.myweb.trip.service;
+
+import org.springframework.stereotype.Service;
+
+@Service("tripService")
+public class TripServiceImpl implements TripService{
+
+	
+	
+}

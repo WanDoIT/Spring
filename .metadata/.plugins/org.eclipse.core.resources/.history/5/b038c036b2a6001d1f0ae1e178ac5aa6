@@ -1,0 +1,5 @@
+package com.lsw.myweb.command;
+
+public class TestVO {
+
+}
